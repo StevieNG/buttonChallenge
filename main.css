@@ -5,8 +5,7 @@
 }
 
 body{
-    background-image: url("BXe0.gif"); 
-    background-size: cover;
+    
 }
 
 h1{color:white;}
@@ -30,7 +29,8 @@ body{    position: relative;
     display: flex;
 
     font-family: 'K2D', sans-serif;
-    background-color:black;
+    background-image: url("BXe0.gif"); 
+    background-size: cover;
 
 }
 a{color:gray;
