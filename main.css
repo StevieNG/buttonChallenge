@@ -4,7 +4,12 @@
     box-sizing: border-box; 
 }
 
+body{
+    background-image: url("BXe0.gif");
+    background-size: cover;
+}
 
+h1{color:white;}
  .yellowText{
     color: rgb(218, 151, 28);
 }
@@ -165,7 +170,8 @@ border-radius: 5px;
 
    .instagram:hover{
     /* color:gray; */
-    animation: rainbow 4s infinite both, scaleB 5s infinite both; 
+    /* animation: rainbow 4s infinite both, scaleB 5s infinite both;  */
+
 
    } 
 
@@ -230,3 +236,9 @@ border-radius: 5px;
     50%{transform: scale(0.8)}
     75%{transform: scale(1.5)}
     100%{transform: scale(1.0)}}
+
+    @keyframes AnimationName { 
+        0%{background-position:15% 0%}
+        50%{background-position:86% 100%}
+        100%{background-position:15% 0%}
+    }
