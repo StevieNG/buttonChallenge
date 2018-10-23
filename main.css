@@ -44,7 +44,7 @@ text-decoration: none}
         font-family: 'K2D', sans-serif;
         font-weight: 300;
         font-size: 40px;
-    
+        /* transform: skewX(-10deg); */
         /* margin: 0px 00px; */
         text-shadow: 3px 3px rgb(138, 135, 135);
         box-shadow: 15px 5px rgb(77, 85, 100);
@@ -68,7 +68,7 @@ text-decoration: none}
         border-radius: 200px;
         /* padding:20px; */
         color: white;
-        transform:  rotate(360deg) scale(0.5) ; 
+        transform:  rotate(360deg) scale(0.5) skewX(-10deg) ; 
 
         transition: border-radius 10s, transform 5s, background-color 3s, color 0.5s ;
        
@@ -134,6 +134,7 @@ text-decoration: none}
     position: relative;
     left:0px;
     top:100px;
+    font-size: 100px;
 color:rgb(30, 105, 218);
 /* background-color: white; */
 /* padding:10px; */
@@ -143,14 +144,30 @@ border-radius: 5px;
 
 .twitter:hover i{
  background-color: rgb(131, 128, 128);
-
+ border-radius: 50px;
     animation: scaleA 2s infinite both,  shadowChange 1s infinite both linear;
     
 }
 
-.instagram{position: relative;
-        left:-10px;
-        top:400px;}
+.instagram{
+     position: absolute;
+        left:700px; 
+        top:700px;
+    padding:30px 50px;
+    font-size: 60px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: gray;
+    color:white;
+    border: 3px solid white 
+    }
+
+   .instagram:hover{
+    /* color:gray; */
+    animation: rainbow 5s infinite both, scaleB 1s infinite both; 
+
+   } 
 
 
 @keyframes color_anim {
@@ -186,9 +203,26 @@ border-radius: 5px;
 }
 
 @keyframes shadowChange {
-    0%{box-shadow: 5px 5px white}
-    25%{box-shadow: -5px 5px rgb(202, 190, 190)}
-    50%{box-shadow: -5px -5px rgb(131, 128, 128)}
-    100%{box-shadow: 5px -5px rgb(58, 57, 57)}
+    0%{box-shadow: 15px 15px white}
+    25%{box-shadow: -15px 15px rgb(202, 190, 190)}
+    50%{box-shadow: -15px -15px rgb(131, 128, 128)}
+    100%{box-shadow: 15px -15px rgb(58, 57, 57)}
 
 }
+
+@keyframes rainbow {
+    0%{background-color: red}
+    14%{background-color:  orange}
+    28%{background-color: yellow}
+    42%{background-color: green}
+    56%{background-color: limegreen}
+    70%{background-color: blue}
+    85%{background-color: violet}
+
+}
+
+@keyframes scaleB{
+    0%{transform: scale(1)}
+    50%{transform: scale(0.8)}
+    75%{transform: scale(1.5)}
+    100%{transform: scale(1.0)}}
