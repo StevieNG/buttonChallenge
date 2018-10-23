@@ -165,9 +165,13 @@ border-radius: 5px;
 
    .instagram:hover{
     /* color:gray; */
-    animation: rainbow 5s infinite both, scaleB 1s infinite both; 
+    animation: rainbow 4s infinite both, scaleB 5s infinite both; 
 
    } 
+
+   .instagram:focus{
+       background-color:black;
+   }
 
 
 @keyframes color_anim {
