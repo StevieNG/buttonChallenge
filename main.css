@@ -167,8 +167,8 @@ border-radius: 5px;
     }
 
    .instagram:hover{
-    /* color:gray; */
-    /* animation: rainbow 4s infinite both, scaleB 5s infinite both;  */
+    color:gray; 
+     animation: rainbow 4s infinite both, scaleB 5s infinite both; 
 
 
    } 
